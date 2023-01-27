@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import ShopItemClass from './ShopItemClass';
+import ShopItemClass from   './components/ShopItemClass';
+
+
 
 function App() {
     const item = {

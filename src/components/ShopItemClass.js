@@ -1,5 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
+import PropTypes from './models/ItemModel'
+import PropTypes from 'prop-types';
 
 class ShopItemClass extends React.Component {
     constructor(props) {
@@ -27,4 +29,7 @@ class ShopItemClass extends React.Component {
     } ;
 }
 
+ShopItemClass.PropTypes = {
+    item: PropTypes.instanceOf(ItemModel).isRequired();
+}
 export default ShopItemClass;
